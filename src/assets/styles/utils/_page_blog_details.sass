@@ -1,0 +1,56 @@
+.banner_details
+    margin-bottom: 5%
+
+.tabs
+    margin-bottom: 5%
+
+    &__flex
+        display: flex
+        justify-content: center
+
+    &__left
+        width: 70%
+
+        &_heading
+            @include text('DM Serif Display',normal,400,50px,62px,#292F36)
+            letter-spacing: 1px
+            margin-bottom: 3%
+
+        & img
+            border-radius: 50px
+            margin-bottom: 3%
+
+        &_date
+            display: flex
+            justify-content: space-between
+            @include text('Jost',normal,400,16px,24px,#4D5053)
+            letter-spacing: 0.16px
+            text-transform: capitalize
+            padding-right: 10%
+            margin-bottom: 5%
+
+        &_text
+            @include text('Jost',normal,400,22px,33px,#4D5053)
+            letter-spacing: 0.22px
+            margin-bottom: 5%
+
+    &__right
+        width: 30%
+        display: flex
+        flex-direction: column
+
+        &_heading
+            @include text('DM Serif Display',normal,400,25px,32px,#292F36)
+            letter-spacing: 0.5px
+            margin-bottom: 20px
+
+        &_btn
+            padding: 10px 20px
+            border-radius: 10px
+
+        &_btn:hover
+            background: #000
+            color: #fff
+
+        & div
+            margin-bottom: 3%

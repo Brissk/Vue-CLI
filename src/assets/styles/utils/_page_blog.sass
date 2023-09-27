@@ -1,0 +1,138 @@
+.banner
+    margin-bottom: 5%
+
+    &__flex
+        display: flex
+        justify-content: center
+
+    &__title
+        display: flex
+        flex-direction: column
+        align-items: center
+        background: #ffffff
+        border-radius: 50px 50px 0 0
+        padding: 40px 70px
+        margin-top: -160px
+
+    &__news
+        @include text('DM Serif Display',normal,400,50px,62px,#292F36)
+
+    &__ul
+        display: flex
+        list-style: none
+
+    &__li a
+        @include text('Jost',normal,400,22px,33px,#4D5053)
+        letter-spacing: 0.22px
+
+    &__li:first-child::after
+        content: '/'
+        margin: 0 7px
+
+.post
+    margin-bottom: 5%
+
+    &__flex
+        display: flex
+        flex-direction: column
+
+    &__title
+        @include text('DM Serif Display',normal,400,50px,62px,#292F36)
+        letter-spacing: 1px
+        margin-bottom: 20px
+
+    &__article
+        display: flex
+
+        &_image img
+            border-radius: 50px
+
+        &_text
+            padding: 5% 7%
+
+            &_top h3
+                @include text('DM Serif Display',normal,400,25px,31px,#292F36)
+                letter-spacing: 0.5px
+                margin-bottom: 20px
+
+            &_top p
+                @include text('Jost',normal,400,22px,33px,#4D5053)
+                letter-spacing: 0.22px
+                margin-bottom: 20px
+
+            &_bottom
+                display: flex
+                justify-content: space-between
+
+                &_1
+                @include text('Jost',normal,400,16px,24px,#4D5053)
+                margin-top: 40px
+                letter-spacing: 0.16px
+                text-transform: capitalize
+
+.news
+    margin-bottom: 3%
+
+    &__flex
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+    &__product
+        max-width: 30%
+        border-radius: 50px
+        margin-bottom: 3%
+        position: relative
+
+        &:hover
+            background: #E7E7E7
+
+    &__product_link
+        display: block
+
+    &__image
+        width: 100%
+        border-radius: 50px 50px 0 0
+
+    &__notice
+        position: absolute
+        top: 50%
+        left: 5%
+        padding: 10px
+        background: #fff
+        border-radius: 10px 10px 10px 0
+
+        & p
+            @include text('Jost', normal, 400, 16px, 24px, #4D5053)
+            letter-spacing: 0.16px
+            text-transform: capitalize
+
+    &__content
+        display: flex
+        flex-direction: column
+        gap: 30px
+        padding: 5%
+
+        &_text_1
+            width: 80%
+            @include text('DM Serif Display', normal, 400, 25px, 31px, #292F36)
+            letter-spacing: 0.5px
+
+        &_text_2
+            @include text('Jost', normal, 400, 16px, 24px, #4D5053)
+            letter-spacing: 0.16px
+
+        &_arrow
+            display: flex
+            justify-content: space-between
+
+        &_arrow i
+            color: #292F36
+            font-size: 20px
+
+.pagination
+    margin-bottom: 5%
+
+    &__flex
+        display: flex
+        justify-content: center

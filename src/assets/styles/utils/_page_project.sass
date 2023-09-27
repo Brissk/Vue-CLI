@@ -1,0 +1,98 @@
+.category
+
+    &__flex
+        display: flex
+        flex-direction: column
+
+    &__heading
+        display: flex
+        justify-content: center
+        margin-bottom: 5%
+
+    &__block
+        display: flex
+
+        &_left
+            display: flex
+            flex-direction: column
+            width: 50%
+
+        &_right
+            display: flex
+            flex-direction: column
+            width: 50%
+
+        &__product
+            max-width: 50%
+            margin-bottom: 3%
+            position: relative
+
+    &__product_link
+        display: block
+
+    &__content
+        display: flex
+        padding: 5%
+
+        &_text
+            width: 50%
+
+        &_text_1
+            @include text('DM Serif Display', normal, 400, 25px, 31px, #292F36)
+            letter-spacing: 0.5px
+            margin-bottom: 5%
+
+        &_text_2
+            @include text('Jost', normal, 400, 22px, 33px, #4D5053)
+            margin-bottom: 5%
+            letter-spacing: 0.22px
+
+        &_arrow
+            width: 50%
+            display: flex
+            justify-content: right
+            align-items: center
+            color: #292F36
+            font-size: 25px
+
+    &__product_box
+        display: none
+        position: absolute
+        top: 30%
+        justify-content: center
+        width: 100%
+        pointer-events: none
+
+    &__product_box a
+        border: 1px solid #fff
+        padding: 3% 5%
+        display: flex
+        pointer-events: all
+        align-items: center
+
+    &__product_box img
+        margin-right: 13px
+
+    &__product_box p
+        @include text("Lato", normal, 700, 13px, 16px, #ffffff)
+        margin-bottom: 0
+
+    &__product:hover
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+
+    &__product:hover .items__product_box
+        display: flex
+
+    &__product_box a:hover
+        box-shadow: 0 0 8px #fff
+
+    &__product:hover .items__image
+        filter: sepia(15%) brightness(30%)
+
+    &__btn-text_1
+        text-transform: capitalize
+
+    &__pagination
+        width: 100%
+        display: flex
+        justify-content: center
